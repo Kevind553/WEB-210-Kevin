@@ -1,0 +1,99 @@
+
+/*Global Styles*/
+body{
+ color: #383636;
+}
+
+.expand-card {
+    transition: transform 0.5s ease;
+ }
+ .expand-card:hover{
+    transform: scale(1.1);
+ }
+  
+/*Profile*/
+header{
+    background: #bff0f1;
+    border-style:solid;
+    border-width: 3px;
+    box-shadow: 3px 4px #bdbdbd;
+    
+}
+.pad{
+    padding-left: 15px;
+}
+/*Projects*/
+.projects{
+    background: #dcdddd;
+    
+}
+/*Education*/
+.education{ background: #bfa5c5;
+}
+
+
+a:link, a:visited {
+    background-color: #2f95da;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px ;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(132, 201, 247);
+  }
+  
+  footer h2{
+      text-align: center;
+  }
+  .a:link, a:visited {
+  background-color: #19b3da;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(17, 157, 238);
+}
+
+/*Image section*/
+div.polaroid {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  
+}
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    
+}
+h2{
+    font-family:sans-serif;
+}
+h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    background-color: rgb(213, 235, 229);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
