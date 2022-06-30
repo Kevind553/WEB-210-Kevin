@@ -1,0 +1,139 @@
+/*Basic*/
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    border: 5px solid #555555;
+}
+
+
+h1{
+    font-family:serif;
+    color: #6faac2;
+}
+h2{
+    
+        color:#235b81 ; 
+}
+
+h3{
+    color:rgb(41, 55, 61);
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#000000
+}
+nav{
+grid-area: nav;
+text-align: center;
+padding-left: 20px;
+}
+
+main{
+padding-left: 20px;
+    grid-area:main;
+}
+#sidebar{
+    grid-area: sidebar;
+    padding-left: 20px;
+}
+#content1{
+grid-area:content1;
+}
+
+footer{
+    grid-area:footer;
+}
+
+
+/*menu nav*/
+.nav{
+    border-bottom: 1px solid #7f7fe7;
+    text-align: right;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 30px 0 0;
+}
+.menu a {
+    clear:right;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height:70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+
+
+.wrapper{
+    display: grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: "nav nav nav nav"
+    "sidebar main main main" 
+    "sidebar content1 content1 content1"
+    "sidebar footer footer footer";
+    grid-gap:1.5rem;
+}
+
+/*Media Queires*/
+
+@media screen and (min-width:560px)
+{
+    .nav{
+        text-align: center;
+    }
+}
+/*mobile nav*/
+@media only screen and (max-width:510px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin:0;
+    }
+    #toggle:checked+ .menu{
+        display: block;
+    }
+   
+}
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: "nav" "sidebar" "main" "content1"
+        "content2" "content3" "footer";
+    }
+}
+
+
